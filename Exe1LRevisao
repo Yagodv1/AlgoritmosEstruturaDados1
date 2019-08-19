@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int potencia();
+
+int main()
+{
+  int n=5, p=3, res;
+
+  res=potencia(n, p);
+  printf("O resultado da potência será %d.\n", res);
+}
+
+int potencia(int nf, int pf)
+{
+  int i, resf;
+
+  if(pf==0)
+    return 1;
+  else
+  {
+    resf=nf;
+    for(i=1; i<pf; i++)
+    {
+      resf*=nf;
+    }
+  }
+  return resf;
+}
