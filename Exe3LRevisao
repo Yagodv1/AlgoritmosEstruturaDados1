@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void proc(char *res, int nota);
+
+int main()
+{
+  int nota=8;
+  char res;
+  
+  proc(&res, nota);
+  printf("Conceito: %c\n", res);
+  return 0;
+}
+
+void proc(char *res, int nota)
+{
+  if(nota<0 || nota>10)
+    *res='?';
+  else if(nota < 6)
+    *res='I';
+  else if(nota < 7)
+    *res='C';
+  else if(nota < 9)
+    *res='B';
+  else
+    *res='A';
+}
