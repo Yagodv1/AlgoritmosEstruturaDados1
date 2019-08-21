@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int inverter(int n)
+{
+  int cent, dez, unid;
+  cent=n/100;
+  dez=(n%100)/10;
+  unid=(n%10);
+  return (unid*100)+(b*10)+a;
+}
+
+int main()
+{
+  int n=692, inv;
+  inv=processamento(n);
+  printf("O inverso e %d", inv);
+  return 0;
+}
